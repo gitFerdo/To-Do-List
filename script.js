@@ -8,5 +8,11 @@ function addTask() {
         let li = document.createElement('li');
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
+
+        let span = document.createElement('span');
+        span.innerHTML = "\u00D7"; // Unicode for multiplication sign (×)
+        li.appendChild(span);
     }
+
+    inputBox.value = ""
 }
